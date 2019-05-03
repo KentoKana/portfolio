@@ -1,35 +1,25 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+a.nav__link {
+  height: 100%;
+  padding-left: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a {
+  padding: 0;
+  margin: 0;
 }
 
 a.project__link {
@@ -47,4 +37,93 @@ a.project__link {
     width: 100%;
     margin: auto;
   }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-left: -3em;
+  z-index: 2;
+}
+
+.navigation ul {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  color:#fff;
+  padding: 1em 0 2em 1em;
+}
+
+.navigation ul li {
+  display: flex;
+  height: 100%;
+  align-items: center; 
+  border-left: 2px solid white;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 1s;
+}
+
+.navigation ul li:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.navigation ul li:hover {
+  color: #eac435;
+  border-color: #eac435;
+}
+
+.navigation ul li:active {
+  color: #33658a;
+  border-color: #33658a;
+  transition: 0s;
+}
+
+@media only screen and (max-width: 996px) {
+  .navigation {
+    /* margin-left: -6em; */
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .navigation {
+    position: absolute;
+    left: -1000000px;
+  }
+
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.center div {
+  margin: auto 0;
+  justify-content: center;
+}
+
+.primary-text {
+  color: #eac435;
+}
+
+.titleSection {
+  background-color: #a31621;
+}
+
+.projectSection {
+  background-color: #345995;
+}
+
+.projectCard {
+  display:flex;
+  justify-content: center;
+}
+.skillsSection {
+  background-color: #345995;
 }

@@ -3,18 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import CoreSkills from "./CoreSkills";
 import Projects from "./Projects";
-import Container from 'react-bootstrap/Container';
-
-function TitleSection() {
-  return (
-    <main>
-      <Container>
-        <h1>I'm Kento.</h1>
-        <p>A full-stack web developer currently based in Toronto. I have a thing for a great cup of coffee, web development, and learning. </p>
-      </Container>
-    </main>
-  );
-}
+import TitleSection from "./TitleSection";
+import Navigation from "./Navigation"
 
 class App extends Component {
   constructor(props) {
@@ -27,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="text-center">
+        <Navigation />
         <TitleSection />
         <Projects />
         <CoreSkills />

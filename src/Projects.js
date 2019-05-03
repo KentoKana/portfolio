@@ -3,6 +3,8 @@ import Heading from './Heading';
 import ProjectCard from './ProjectCard';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 class Projects extends Component {
     render() {
@@ -98,39 +100,29 @@ class Projects extends Component {
         ];
 
         return (
-            <>
-                <Container>
-                    <Heading heading="Projects" />
-                    <Row>
-                        {
-                            projects.map(p =>
-                                <ProjectCard
-                                    projectName={p.projectName}
-                                    toolsUsed={p.toolsUsed.map(t => <li className="list-unstyled p-1" key={i++}>{t}</li>)}
-                                    key={p.id.toString()}
-                                    modalBodyContent={p.projectDesc}
-                                    github={p.github}
-                                    liveSite={p.liveSite}
-                                    indexImg={p.projectDesc.imgSrcPath[0]}
-                                    className={"m-4"}
-                                // slideShowImg={p.projectDesc.imgSrcPath.map(i =>
-                                //     <Carousel.Item>
-                                //         <img
-                                //             src={i}
-                                //             className="d-block w-100"
-                                //             alt="project overview pictures"
-                                //             key={i++}
-                                //         />
-                                //     </Carousel.Item>
-                                // )}
-                                />
-                            )
-                        }
-                    </Row>
-                </Container>
-
-
-            </>
+            <ScrollableAnchor id={'projects'}>
+                <div className="section projectSection primary-text center">
+                    <Container>
+                        <Heading heading="Projects" />
+                        <Row>
+                            {
+                                projects.map((p, index) =>
+                                    <ProjectCard
+                                        projectName={p.projectName}
+                                        toolsUsed={p.toolsUsed.map(t => <li className="list-unstyled p-1" key={i++}>{t}</li>)}
+                                        key={index}
+                                        modalBodyContent={p.projectDesc}
+                                        github={p.github}
+                                        liveSite={p.liveSite}
+                                        indexImg={p.projectDesc.imgSrcPath[0]}
+                                        className={"m-4"}
+                                    />
+                                )
+                            }
+                        </Row>
+                    </Container>
+                </div>
+            </ScrollableAnchor>
 
 
         );

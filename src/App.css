@@ -14,6 +14,7 @@ a:hover {
 
 a.nav__link {
   height: 100%;
+  width: 100%;
   padding-left: 0.5em;
 }
 
@@ -39,6 +40,7 @@ a.project__link {
   }
 }
 
+/* ~~~~~~~~~~~~Navigation ~~~~~~~~~~~~~*/
 .navigation {
   display: flex;
   flex-direction: column;
@@ -63,8 +65,8 @@ a.project__link {
   align-items: center; 
   border-left: 2px solid white;
   cursor: pointer;
-  opacity: 0.3;
-  transition: 1s;
+  opacity: 0.4;
+  transition: 0.3s;
 }
 
 .navigation ul li:hover {
@@ -83,17 +85,45 @@ a.project__link {
   transition: 0s;
 }
 
-@media only screen and (max-width: 996px) {
-  .navigation {
-    /* margin-left: -6em; */
-  }
+#hamburger-menu {
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  left: -1000000px;
 }
 
 @media only screen and (max-width: 674px) {
+  #hamburger-menu {
+    font-size: 2em;
+    color: white;
+    position: fixed;
+    left: 0;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+
   .navigation {
     position: absolute;
-    left: -1000000px;
+    left: -10000px;
+    transition: 2s;
   }
+
+  .navigation.nav-visible {
+    transition: 0.1s;
+    position: fixed;
+    left: 0;
+    background-color: #2F4858;
+    padding-left: 5em;
+    padding-right: 1em;
+    opacity: 1;
+    transition:0.2s;
+  }
+
+  .navigation.nav-visible li {
+    border-left: none;
+    text-align: left;
+  }
+
 
 }
 

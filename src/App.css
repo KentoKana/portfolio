@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* Links */
 a {
   color: inherit;
   text-decoration: none;
@@ -28,6 +28,7 @@ a.project__link {
   margin: 5px;
 }
 
+/* ~~~~~~~~~~~~ Carousel ~~~~~~~~~~~~~*/
 .carousel {
   width: 650px;
   margin: auto;
@@ -63,18 +64,14 @@ a.project__link {
   display: flex;
   height: 100%;
   align-items: center; 
-  border-left: 2px solid white;
-  cursor: pointer;
-  opacity: 0.4;
-  transition: 0.3s;
 }
 
-.navigation ul li:hover {
+.navigation ul li a:hover {
   opacity: 1;
   transition: 0.3s;
 }
 
-.navigation ul li:hover {
+.navigation ul li a:hover {
   color: #eac435;
   border-color: #eac435;
 }
@@ -83,6 +80,25 @@ a.project__link {
   color: #33658a;
   border-color: #33658a;
   transition: 0s;
+}
+
+.nav__link {
+  height: 100%;
+  border-left: 2px solid;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.current {
+  color: #eac435;
+  border-left: 2px solid #eac435;
+  border-color: #eac435;
+  opacity: 1;
+}
+
+.navigation ul li a.nav__link.current a{
+  opacity: 1;
 }
 
 #hamburger-menu {
@@ -127,6 +143,8 @@ a.project__link {
 
 }
 
+/* ~~~~~~~~~~~~ Helpers ~~~~~~~~~~~~~*/
+
 .section {
   display: flex;
   min-height: 100vh;
@@ -142,6 +160,8 @@ a.project__link {
   color: #eac435;
 }
 
+/* ~~~~~~~~~~~~ Section Specific ~~~~~~~~~~~~~*/
+
 .titleSection {
   background-color: #a31621;
 }
@@ -155,5 +175,8 @@ a.project__link {
   justify-content: center;
 }
 .skillsSection {
+  background-color: #345995;
+}
+.contactSection {
   background-color: #345995;
 }

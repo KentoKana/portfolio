@@ -5,6 +5,7 @@ import CoreSkills from "./CoreSkills";
 import Projects from "./Projects";
 import TitleSection from "./TitleSection";
 import Navigation from "./Navigation"
+import Contact from "./Contact";
 
 class App extends Component {
   constructor(props) {
@@ -21,8 +22,7 @@ class App extends Component {
         <TitleSection />
         <Projects />
         <CoreSkills />
-
-
+        <Contact />
       </div>
     );
   }

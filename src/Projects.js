@@ -102,7 +102,7 @@ class Projects extends Component {
         return (
             <ScrollableAnchor id={'projects'}>
                 <div className="section projectSection primary-text center">
-                    <Container>
+                    <Container className="projectsContainer">
                         <Heading heading="Projects" />
                         <Row>
                             {
@@ -115,7 +115,7 @@ class Projects extends Component {
                                         github={p.github}
                                         liveSite={p.liveSite}
                                         indexImg={p.projectDesc.imgSrcPath[0]}
-                                        className={"m-4"}
+                                        className={"m-3"}
                                     />
                                 )
                             }

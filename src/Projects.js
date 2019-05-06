@@ -94,7 +94,7 @@ class Projects extends Component {
                 },
                 id: 4,
                 github: "https://github.com/KentoKana/guess-the-location-game",
-                liveSite: "http://guess-the-location.herokuapp.com/"
+                liveSite: "http://guess-the-location.kentokanazawa.com/"
             },
 
         ];

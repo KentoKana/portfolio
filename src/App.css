@@ -4,6 +4,25 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  background-color:#042947;
+  background-attachment: fixed;
+  background-image: url("/images/3px-tile.png");
+  /* https://www.transparenttextures.com/ */
+}
+/* 
+.diagonalDivBg {
+  position: absolute;
+  width: 200vw;
+  height: 100vh;
+  background:linear-gradient(45deg,  #dc7630  0%,  #883824  26%, transparent 10%);
+  z-index:-1;  
+} */
+.relative {
+  position: relative;
+}
+
+h2 {
+  margin-top:1em;
 }
 
 /* Links */
@@ -61,7 +80,7 @@ a.project__link {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
-  color:#fff;
+  color: rgb(230, 167, 33);
   padding: 1em 0 2em 1em;
 }
 
@@ -77,8 +96,8 @@ a.project__link {
 }
 
 .navigation ul li a:hover {
-  color: #eac435;
-  border-color: #eac435;
+  color:#ff8800;
+  border-color: #ff8800;
 }
 
 .navigation ul li:active {
@@ -92,13 +111,13 @@ a.project__link {
   border-left: 2px solid;
   cursor: pointer;
   transition: 0.3s;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .current {
-  color: #eac435;
-  border-left: 2px solid #eac435;
-  border-color: #eac435;
+  color: #ffd152;
+  border-left: 2px solid #ffd152;
+  /* border-color: #2c2105; */
   opacity: 1;
 }
 
@@ -127,13 +146,14 @@ a.project__link {
     position: absolute;
     left: -10000px;
     transition: 2s;
+
   }
 
   .navigation.nav-visible {
     transition: 0.1s;
     position: fixed;
     left: 0;
-    background-color: #2F4858;
+    background-color: #021b30;
     padding-left: 5em;
     padding-right: 1em;
     opacity: 1;
@@ -144,6 +164,12 @@ a.project__link {
     border-left: none;
     text-align: left;
   }
+
+  .navigation.nav-visible li {
+    color: #dc7630;
+  }
+
+
 
 
 }
@@ -162,17 +188,18 @@ a.project__link {
 }
 
 .primary-text {
-  color: #eac435;
+  /* color: #eac435; */
+  color: #ffffff;
 }
 
 /* ~~~~~~~~~~~~ Section Specific ~~~~~~~~~~~~~*/
 
 .titleSection {
-  background-color: #a31621;
+  /* background-color: #a31621; */
 }
 
 .projectSection {
-  background-color: #345995;
+  /* background-color: #345995; */
 }
 
 .projectsContainer.container {
@@ -189,9 +216,14 @@ a.project__link {
   display:flex;
   justify-content: center;
 }
+.projectsRow {
+  margin:3em;
+  justify-content: flex-start;
+}
+
 .skillsSection {
-  background-color: #345995;
+  /* background-color: #345995; */
 }
 .contactSection {
-  background-color: #345995;
+  /* background-color: #345995; */
 }

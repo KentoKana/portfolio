@@ -19,6 +19,7 @@ class App extends Component {
     return (
       <div className="text-center">
         <Navigation />
+        <div className="diagonalDivBg"></div>
         <TitleSection />
         <Projects />
         <CoreSkills />

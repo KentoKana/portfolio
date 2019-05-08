@@ -28,14 +28,13 @@ class ProjectCard extends Component {
     let key = 0;
 
     return (
-      // <div className="projectCard">
-        <Col lg={3} className="p-4">
+        <Col lg={4} className="p-4">
           <div>
             <h4>{this.props.projectName}</h4>
             <p>
               {this.props.projectDesc}
             </p>
-            <div>
+            {/* <div>
               <a
                 href={this.props.github}
                 aria-label="Visit GitHub Repository"
@@ -52,7 +51,7 @@ class ProjectCard extends Component {
               >
                 <i className="fas fa-globe-europe" aria-hidden="true" title="Visit Live Site"></i>
               </a>
-            </div>
+            </div> */}
             <Row>
               <div>
                 <img
@@ -147,7 +146,6 @@ class ProjectCard extends Component {
             </Modal>
           </ButtonToolbar>
         </Col>
-      // </div>
     )
   }
 }

@@ -101,10 +101,10 @@ class Projects extends Component {
 
         return (
             <ScrollableAnchor id={'projects'}>
-                <div className="section projectSection primary-text center">
+                <div className="section projectSection primary-text">
                     <Container className="projectsContainer">
                         <Heading heading="Projects" />
-                        <Row>
+                        <Row className="projectsRow">
                             {
                                 projects.map((p, index) =>
                                     <ProjectCard

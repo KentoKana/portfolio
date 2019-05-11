@@ -31,27 +31,6 @@ class ProjectCard extends Component {
       <Col lg={4} className="p-0">
         <div className="p-4 projectCard" onClick={() => this.setState({ lgShow: true })}>
           <h4>{this.props.projectName}</h4>
-          <p>
-            {this.props.projectDesc}
-          </p>
-          {/* <div>
-              <a
-                href={this.props.github}
-                aria-label="Visit GitHub Repository"
-                target="_blank" rel="noopener noreferrer"
-                className="project__link"
-              >
-                <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i>
-              </a>
-              <a
-                href={this.props.liveSite}
-                aria-label="Visit Live Site" target="_blank"
-                rel="noopener noreferrer"
-                className="project__link"
-              >
-                <i className="fas fa-globe-europe" aria-hidden="true" title="Visit Live Site"></i>
-              </a>
-            </div> */}
           <Row>
             <div>
               <img
@@ -65,14 +44,13 @@ class ProjectCard extends Component {
               />
             </div>
           </Row>
-          <h5>Main Tools Used:</h5>
-
           <Row
             className="justify-content-center"
           >
-            <ul className="text-left d-flex row">
+            <ul className="pt-3 text-left d-flex row" title="Main Tools Used">
               {this.props.toolsUsed}
             </ul>
+            <span className="sr-only"></span>
           </Row>
           {/* <Button onClick={() => this.setState({ lgShow: true })}>
             See Details

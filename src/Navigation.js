@@ -44,6 +44,7 @@ class Navigation extends Component {
     }
 
     handleMobileNavClick = () => {
+        this.handleRocketWobble();
         this.setState((prevState) => {
             prevState.navVisible = !this.state.navVisible;
         });
@@ -68,7 +69,7 @@ class Navigation extends Component {
                 item[i].className = this.unselectedLink;
             }
         }
-        this.handleRocketWobble();
+        // this.handleRocketWobble();
         this.setState({ navItems: item });
     }
 

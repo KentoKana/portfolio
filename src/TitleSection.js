@@ -9,6 +9,13 @@ function TitleSection() {
       <main className="section center titleSection primary-text">
         <Container>
           <div>
+            <img
+              src="/images/logo.png"
+              alt="Logo" id="logo"
+              style={{
+                width: '100px',
+              }}
+            />
             <h1>I'm Kento.</h1>
             <p>A full-stack web developer currently based in Toronto.</p>
           </div>

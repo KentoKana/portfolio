@@ -9,6 +9,7 @@ class Navigation extends Component {
         this.unselectedLink = 'nav__link';
         this.currentHeaderUrl = window.location.hash;
         this.state = {
+            rocketWobble: false,
             navVisible: false,
             navBarClassName: 'navigation',
             navLinkClicked: false,
@@ -67,7 +68,12 @@ class Navigation extends Component {
                 item[i].className = this.unselectedLink;
             }
         }
+        this.handleRocketWobble();
         this.setState({ navItems: item });
+    }
+
+    handleRocketWobble = () => {
+        this.setState({ rocketWobble: !this.state.rocketWobble });
     }
 
     componentDidMount = () => {
@@ -77,6 +83,12 @@ class Navigation extends Component {
     render() {
         return (
             <Container>
+                <img
+                    src="/images/rocket.svg"
+                    alt="Rocket" id="rocket"
+                    className={this.state.rocketWobble ? 'rocket-wobble' : ''}
+                    onAnimationEnd={() => this.setState({ rocketWobble: false })}
+                />
                 <nav className={this.state.navBarClassName}>
                     <i className="fas fa-bars" id="hamburger-menu" onClick={this.handleMobileNavClick}></i>
                     <ul>
@@ -84,7 +96,6 @@ class Navigation extends Component {
                             <li
                                 key={index}
                                 id={index}
-                            // onClick={ ()=> { this.handleCurrentLink(navItem) }}
                             >
                                 <a onClick={this.handleMobileNavClick} className={navItem.className} href={navItem.goTo}> {navItem.name} </a>
                             </li>

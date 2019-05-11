@@ -65,7 +65,7 @@ class CoreSkills extends Component {
     return (
       <ScrollableAnchor id={'skills'}>
 
-        <div className="text-left m-auto section skillsSection center">
+        <div className="text-left m-auto section skillsSection center primary-text">
           <Container>
             <h2 className="text-center">Core Skills</h2>
             <Row>

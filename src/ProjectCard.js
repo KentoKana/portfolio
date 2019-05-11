@@ -77,7 +77,7 @@ class ProjectCard extends Component {
             </Modal.Header>
 
             {/* Modal body here */}
-            <Modal.Body>
+            <Modal.Body className="projectModal">
               {/* SlideShow for projects */}
               <div>
                 <SlideShow

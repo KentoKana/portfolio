@@ -11,7 +11,7 @@ class Navigation extends Component {
         this.unselectedLink = 'nav__link';
         this.currentHeaderUrl = window.location.hash;
         this.state = {
-            projectiles: 'clouds.svg',
+            projectiles: 'satellite.svg',
             rocketWobble: false,
             navVisible: false,
             navBarClassName: 'navigation',

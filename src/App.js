@@ -27,7 +27,7 @@ class App extends Component {
     console.log(this.state.asteroidOn);
     return (
       <div className="text-center">
-        <button
+        {/* <div
           className="asteroidsButton"
           onClick={this.handleAsteroids}
           style={
@@ -43,17 +43,16 @@ class App extends Component {
           }
           title={this.state.asteroidsOn ? "Turn Asteroids Off" : "Turn Asteroids On"}
         >
-          <i
-            class="fas fa-power-off"
-            aria-hidden="true"
+          <span
             title={this.state.asteroidsOn ? "Turn Asteroids Off" : "Turn Asteroids On"}
           >
-          </i>
+            {this.state.asteroidsOn ? "Turn Asteroids Off" : "Turn Asteroids On"}
+          </span>
           <span class="sr-only">
             {this.state.asteroidsOn ? "Turn Asteroids Off" : "Turn Asteroids On"}
           </span>
 
-        </button>
+        </div> */}
         <Navigation />
         <TitleSection />
         <Projects />

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
+import Asteroid from "./Asteroid";
+
 
 class Navigation extends Component {
 
@@ -9,6 +11,7 @@ class Navigation extends Component {
         this.unselectedLink = 'nav__link';
         this.currentHeaderUrl = window.location.hash;
         this.state = {
+            projectiles: 'clouds.svg',
             rocketWobble: false,
             navVisible: false,
             navBarClassName: 'navigation',
@@ -71,6 +74,16 @@ class Navigation extends Component {
         }
         // this.handleRocketWobble();
         this.setState({ navItems: item });
+        if(window.location.hash === "#home") {
+            this.setState({projectiles: 'clouds.svg'})
+        }  else if (window.location.hash === "#projects") {
+            this.setState({projectiles: "satellite.svg"})
+        } else if (window.location.hash === "#skills"){
+            this.setState({projectiles: "asteroid.svg"})
+        } else if (window.location.hash === "#contact") {
+            this.setState({projectiles: "ufo.svg"})
+        }
+        
     }
 
     handleRocketWobble = () => {
@@ -103,6 +116,9 @@ class Navigation extends Component {
                         )}
                     </ul>
                 </nav>
+                <Asteroid 
+                    imgSrc={this.state.projectiles}
+                />
             </Container>
         )
     }

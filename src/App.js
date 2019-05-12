@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import TitleSection from "./TitleSection";
 import Navigation from "./Navigation"
 import Contact from "./Contact";
-import Asteroid from "./Asteroid";
+// import Asteroid from "./Asteroid";
 
 class App extends Component {
   constructor(props) {
@@ -58,9 +58,9 @@ class App extends Component {
         <Projects />
         <CoreSkills />
         <Contact />
-        {this.state.asteroidsOn ?
+        {/* {this.state.asteroidsOn ?
           <Asteroid /> : <></>
-        }
+        } */}
 
       </div>
     );

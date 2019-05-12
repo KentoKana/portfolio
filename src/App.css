@@ -218,6 +218,15 @@ a.project__link {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
+.socialMediaLinks a {
+    font-size: 1.5em;
+    padding: 0 5px;
+}
+
+.socialMediaLinks a:hover {
+    color: #1b75bb;
+}
+
 #logo {
     width: 100px;
     filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, 0.7));
@@ -228,7 +237,7 @@ a.project__link {
 }
 
 .projectSection {
-    background-image: linear-gradient(to bottom, rgba(33, 67, 129, 0.39), rgba(193, 241, 253, 0.274));
+    background-image: linear-gradient(to bottom, rgba(23, 46, 90, 0.5), rgba(0, 21, 78, 0.8));
     color: rgb(253, 254, 255);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.623);
 }
@@ -259,7 +268,7 @@ a.project__link {
 
 .projectsRow {
     margin: 3em;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .projectModal {
@@ -269,11 +278,20 @@ a.project__link {
 }
 
 .skillsSection {
-    background: linear-gradient(to bottom, rgba(80, 82, 184, 0.37), rgba(39, 45, 82, 0.52));
+    background: linear-gradient(to bottom, rgba(7, 8, 65, 0.37), rgba(4, 9, 43, 0.7));
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.skillCard {
+    background-color: rgba(5, 9, 19, 0.61);
+    border: 4px rgb(255, 255, 255) dashed;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .contactSection {
-    background: linear-gradient(to bottom, rgba(15, 14, 41, 0.73), rgba(0, 0, 0, 0.52));
+    background: linear-gradient(to bottom, rgba(5, 2, 71, 0.5), rgba(53, 0, 102, 0.5));
 }
 
 #rocket {
@@ -313,18 +331,18 @@ a.project__link {
 
 @keyframes particleAnimation {
     from {
-        left: -100px;
-        bottom: 0;
-        transform: rotate(0deg)
+        left: -300px;
+        left: 0;
+        /* transform: rotate(0deg) */
     }
     to {
         left: calc( 100% + 100px);
         top: 0;
-        transform: rotate(360deg)
+        /* transform: rotate(360deg) */
     }
 }
 
-.asteroids {
+.projectiles {
     position: fixed;
     left: 0px;
     top: 50px;
@@ -336,34 +354,43 @@ a.project__link {
     z-index: -2;
 }
 
-img.asteroids {
-    filter: drop-shadow( 10px 10px 30px rgba(255, 136, 0, 0.7));
+img.projectiles {
+    /* filter: drop-shadow( 10px 10px 30px rgba(255, 136, 0, 0.7)); */
 }
 
-.asteroid-1 {
+.projectile-1 {
     animation-duration: 50s;
     width: 200px;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 }
 
-.asteroid-2 {
+.projectile-2 {
     animation-duration: 60s;
     top: 60%;
     width: 100px;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
 }
 
-.asteroid-3 {
+.projectile-3 {
     animation-duration: 70s;
     top: 90%;
     width: 300px;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
 }
 
-.asteroid-4 {
+.projectile-4 {
     animation-duration: 40s;
     top: 10%;
     width: 150px;
     height: 30px;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
+}
+
+@media only screen and (max-width: 420px) {
+    .projectile-1 {
+        display: none;
+    }
+    .projectile-3 {
+        display: none;
+    }
 }

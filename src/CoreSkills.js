@@ -65,10 +65,10 @@ class CoreSkills extends Component {
     return (
       <ScrollableAnchor id={'skills'}>
 
-        <div className="text-left m-auto section skillsSection center primary-text">
+        <div className="text-left m-auto section skillsSection primary-text">
           <Container>
             <h2 className="text-center">Core Skills</h2>
-            <Row>
+            <Row className="projectsRow">
               {
                 skills.map(s =>
                   <SkillCard

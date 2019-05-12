@@ -3,7 +3,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import SlideShow from './SlideShow';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 

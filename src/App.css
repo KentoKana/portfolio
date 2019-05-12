@@ -304,6 +304,14 @@ a.project__link {
     width: 50%;
 }
 
+#earth {
+    position: fixed;
+    left: 100px;
+    bottom: 100px;
+    z-index: -2;
+    transition: 1s;
+}
+
 #rocket.rocket-wobble {
     animation: shake 1s cubic-bezier(.36, .07, .19, .97) both 1;
 }

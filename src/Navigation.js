@@ -11,6 +11,7 @@ class Navigation extends Component {
         this.unselectedLink = 'nav__link';
         this.currentHeaderUrl = window.location.hash;
         this.state = {
+            earthSize: '200px',
             projectiles: 'satellite.svg',
             rocketWobble: false,
             navVisible: false,
@@ -74,16 +75,28 @@ class Navigation extends Component {
         }
         // this.handleRocketWobble();
         this.setState({ navItems: item });
-        if(window.location.hash === "#home") {
-            this.setState({projectiles: 'satellite.svg'})
-        }  else if (window.location.hash === "#projects") {
-            this.setState({projectiles: "asteroid.svg"})
-        } else if (window.location.hash === "#skills"){
-            this.setState({projectiles: "ufo.svg"})
+        if (window.location.hash === "#home") {
+            this.setState({
+                projectiles: 'satellite.svg',
+                earthSize: '200px',
+            })
+        } else if (window.location.hash === "#projects") {
+            this.setState({
+                projectiles: "asteroid.svg",
+                earthSize: '150px',
+            })
+        } else if (window.location.hash === "#skills") {
+            this.setState({
+                projectiles: "ufo.svg",
+                earthSize: '100px',
+            })
         } else if (window.location.hash === "#contact") {
-            this.setState({projectiles: "star.svg"})
+            this.setState({
+                projectiles: "star.svg",
+                earthSize: '50px',
+            })
         }
-        
+
     }
 
     handleRocketWobble = () => {
@@ -103,6 +116,14 @@ class Navigation extends Component {
                     className={this.state.rocketWobble ? 'rocket-wobble' : ''}
                     onAnimationEnd={() => this.setState({ rocketWobble: false })}
                 />
+                <img
+                    src="/images/earth.svg"
+                    alt="earth" id="earth"
+                    style={{
+                        width: this.state.earthSize
+                    }}
+
+                />
                 <nav className={this.state.navBarClassName}>
                     <i className="fas fa-bars" id="hamburger-menu" onClick={this.handleMobileNavClick}></i>
                     <ul>
@@ -116,7 +137,7 @@ class Navigation extends Component {
                         )}
                     </ul>
                 </nav>
-                <Asteroid 
+                <Asteroid
                     imgSrc={this.state.projectiles}
                 />
             </Container>

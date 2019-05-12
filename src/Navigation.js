@@ -75,13 +75,13 @@ class Navigation extends Component {
         // this.handleRocketWobble();
         this.setState({ navItems: item });
         if(window.location.hash === "#home") {
-            this.setState({projectiles: 'clouds.svg'})
+            this.setState({projectiles: 'satellite.svg'})
         }  else if (window.location.hash === "#projects") {
-            this.setState({projectiles: "satellite.svg"})
-        } else if (window.location.hash === "#skills"){
             this.setState({projectiles: "asteroid.svg"})
-        } else if (window.location.hash === "#contact") {
+        } else if (window.location.hash === "#skills"){
             this.setState({projectiles: "ufo.svg"})
+        } else if (window.location.hash === "#contact") {
+            this.setState({projectiles: "star.svg"})
         }
         
     }

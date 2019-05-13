@@ -30,7 +30,7 @@ class Projects extends Component {
                 id: 1,
 
                 github: "https://github.com/KentoKana/AnimatedProfile",
-                liveSite: "http://animatedprofile.kentokanazawa.com/",
+                liveSite: "http://animated-profile.kentokanazawa.com/",
             },
             {
                 projectName: "Humbie Helper",

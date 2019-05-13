@@ -17,8 +17,7 @@ class Navigation extends Component {
             navVisible: false,
             navBarClassName: 'navigation',
             navLinkClicked: false,
-            navItems: [
-                {
+            navItems: [{
                     id: 'nav__home',
                     name: 'Home',
                     goTo: '#home',
@@ -92,7 +91,7 @@ class Navigation extends Component {
             })
         } else if (window.location.hash === "#contact") {
             this.setState({
-                projectiles: "star.svg",
+                projectiles: "planet.svg",
                 earthSize: '50px',
             })
         }
@@ -108,39 +107,48 @@ class Navigation extends Component {
     }
 
     render() {
-        return (
-            <Container>
-                <img
-                    src="/images/rocket.svg"
-                    alt="Rocket" id="rocket"
-                    className={this.state.rocketWobble ? 'rocket-wobble' : ''}
-                    onAnimationEnd={() => this.setState({ rocketWobble: false })}
-                />
-                <img
-                    src="/images/earth.svg"
-                    alt="earth" id="earth"
-                    style={{
-                        width: this.state.earthSize
-                    }}
+        return ( <
+            Container >
+            <
+            img src = "/images/rocket.svg"
+            alt = "Rocket"
+            id = "rocket"
+            className = { this.state.rocketWobble ? 'rocket-wobble' : '' }
+            onAnimationEnd = {
+                () => this.setState({ rocketWobble: false }) }
+            /> <
+            img src = "/images/earth.svg"
+            alt = "earth"
+            id = "earth"
+            style = {
+                {
+                    width: this.state.earthSize
+                }
+            }
 
-                />
-                <nav className={this.state.navBarClassName}>
-                    <i className="fas fa-bars" id="hamburger-menu" onClick={this.handleMobileNavClick}></i>
-                    <ul>
-                        {this.state.navItems.map((navItem, index) =>
-                            <li
-                                key={index}
-                                id={index}
-                            >
-                                <a onClick={this.handleMobileNavClick} className={navItem.className} href={navItem.goTo}> {navItem.name} </a>
-                            </li>
-                        )}
-                    </ul>
-                </nav>
-                <Asteroid
-                    imgSrc={this.state.projectiles}
-                />
-            </Container>
+            /> <
+            nav className = { this.state.navBarClassName } >
+            <
+            i className = "fas fa-bars"
+            id = "hamburger-menu"
+            onClick = { this.handleMobileNavClick } > < /i> <
+            ul > {
+                this.state.navItems.map((navItem, index) =>
+                    <
+                    li key = { index }
+                    id = { index } >
+                    <
+                    a onClick = { this.handleMobileNavClick }
+                    className = { navItem.className }
+                    href = { navItem.goTo } > { navItem.name } < /a> <
+                    /li>
+                )
+            } <
+            /ul> <
+            /nav> <
+            Asteroid imgSrc = { this.state.projectiles }
+            /> <
+            /Container>
         )
     }
 }

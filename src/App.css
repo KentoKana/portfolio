@@ -276,6 +276,10 @@ a.project__link {
     /* border: 4px rgb(255, 255, 255) dashed; */
 }
 
+.modalLink {
+    text-decoration: underline;
+}
+
 .skillsSection {
     background-color: #0a2e4b9d;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);

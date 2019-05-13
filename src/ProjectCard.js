@@ -84,6 +84,32 @@ class ProjectCard extends Component {
                   slideShowImg={this.props.modalBodyContent} />
               </div>
               <div className="text-left p-4">
+                <div className="m-4">
+                  <h5>
+                    <a
+                      href={this.props.github}
+                      aria-label="Visit GitHub Repository"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="modalLink"
+                    >Visit GitHub Repo
+    
+                      {/* <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i> */}
+                    </a>
+                  </h5>
+                </div>
+                <div className="m-4">
+                  <h5>
+                    <a
+                      href={this.props.liveSite}
+                      aria-label="Visit Live Site" target="_blank"
+                      rel="noopener noreferrer"
+                      className="modalLink"
+                    >
+                      Visit Live Site
+                    </a>
+                  </h5>
+                </div>
                 <div className="m-4 project-modal__desc">
                   <h4>Project Description</h4>
                   <p>

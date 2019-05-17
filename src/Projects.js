@@ -51,6 +51,7 @@ class Projects extends Component {
                     ],
                 },
                 liveSite: "https://humbiehelper.skriptkaiju.com",
+                github: "https://github.com/KentoKana/humbie-helper",
                 id: 2,
             },
             {

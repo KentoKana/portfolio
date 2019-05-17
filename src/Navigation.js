@@ -18,29 +18,29 @@ class Navigation extends Component {
             navBarClassName: 'navigation',
             navLinkClicked: false,
             navItems: [{
-                    id: 'nav__home',
-                    name: 'Home',
-                    goTo: '#home',
-                    className: this.selectedLink,
-                },
-                {
-                    id: 'nav__projects',
-                    name: 'Projects',
-                    goTo: '#projects',
-                    className: this.unselectedLink,
-                },
-                {
-                    id: 'nav__coreSkills',
-                    name: 'Core Skills',
-                    goTo: '#skills',
-                    className: this.unselectedLink,
-                },
-                {
-                    id: 'nav__contact',
-                    name: 'Contact',
-                    goTo: '#contact',
-                    className: this.unselectedLink,
-                },
+                id: 'nav__home',
+                name: 'Home',
+                goTo: '#home',
+                className: this.selectedLink,
+            },
+            {
+                id: 'nav__projects',
+                name: 'Projects',
+                goTo: '#projects',
+                className: this.unselectedLink,
+            },
+            {
+                id: 'nav__coreSkills',
+                name: 'Core Skills',
+                goTo: '#skills',
+                className: this.unselectedLink,
+            },
+            {
+                id: 'nav__contact',
+                name: 'Contact',
+                goTo: '#contact',
+                className: this.unselectedLink,
+            },
             ],
 
         }
@@ -107,48 +107,41 @@ class Navigation extends Component {
     }
 
     render() {
-        return ( <
-            Container >
-            <
-            img src = "/images/rocket.svg"
-            alt = "Rocket"
-            id = "rocket"
-            className = { this.state.rocketWobble ? 'rocket-wobble' : '' }
-            onAnimationEnd = {
-                () => this.setState({ rocketWobble: false }) }
-            /> <
-            img src = "/images/earth.svg"
-            alt = "earth"
-            id = "earth"
-            style = {
-                {
-                    width: this.state.earthSize
+        return (<Container >
+            <img src="/images/rocket.svg"
+                alt="Rocket"
+                id="rocket"
+                className={this.state.rocketWobble ? 'rocket-wobble' : ''}
+                onAnimationEnd={
+                    () => this.setState({ rocketWobble: false })}
+            />
+            <img src="/images/earth.svg"
+                alt="earth"
+                id="earth"
+                style={
+                    {
+                        width: this.state.earthSize
+                    }
                 }
-            }
 
-            /> <
-            nav className = { this.state.navBarClassName } >
-            <
-            i className = "fas fa-bars"
-            id = "hamburger-menu"
-            onClick = { this.handleMobileNavClick } > < /i> <
-            ul > {
-                this.state.navItems.map((navItem, index) =>
-                    <
-                    li key = { index }
-                    id = { index } >
-                    <
-                    a onClick = { this.handleMobileNavClick }
-                    className = { navItem.className }
-                    href = { navItem.goTo } > { navItem.name } < /a> <
-                    /li>
-                )
-            } <
-            /ul> <
-            /nav> <
-            Asteroid imgSrc = { this.state.projectiles }
-            /> <
-            /Container>
+            /> <nav className={this.state.navBarClassName} >
+                <i className="fas fa-bars"
+                    id="hamburger-menu"
+                    onClick={this.handleMobileNavClick} > </i>
+                <ul > {
+                    this.state.navItems.map((navItem, index) =>
+                        <li key={index}
+                            id={index} >
+                            <a onClick={this.handleMobileNavClick}
+                                className={navItem.className}
+                                href={navItem.goTo} > {navItem.name} </a>
+                        </li>
+                    )
+                }
+                </ul>
+            </nav>
+            <Asteroid imgSrc={this.state.projectiles} />
+        </Container>
         )
     }
 }

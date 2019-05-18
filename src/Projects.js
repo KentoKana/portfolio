@@ -97,6 +97,28 @@ class Projects extends Component {
                 github: "https://github.com/KentoKana/guess-the-location-game",
                 liveSite: "http://guess-the-location.kentokanazawa.com/"
             },
+            {
+                projectName: "XML Chat App",
+                toolsUsed: [
+                    "XML",
+                    "jQuery",
+                    "PHP",
+                ],
+                projectDesc: {
+                    desc: "This is my take on the popular game, 'GeoGuessr', built in React.",
+                    notableFeature: "This project uses Nominatim GeoCoder, Country.io, and Google APIs, and is consumed using React and Axios. The app randomly selects a street-view available latitude and longitude coordinate, and asks the player to guess the target location by searching for clues in the street-view.",
+                    futureFixes: "Currently, the only way to skip the current target location is to refresh the page, and the application is not mobile friendly. There are several other user-experience considerations I'd like to fix, so that the game feels more intuitive.",
+                    imgSrcPath: [
+                        'images/projects/guess-the-location/1.png',
+                        'images/projects/guess-the-location/2.png',
+                        'images/projects/guess-the-location/3.png',
+                    ],
+                },
+                id: 4,
+                github: "https://github.com/KentoKana/xml-chat-application",
+                liveSite: "http://xml-chat-app.kentokanazawa.com/"
+            },
+            
 
         ];
 

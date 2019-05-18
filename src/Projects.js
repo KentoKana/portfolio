@@ -105,13 +105,33 @@ class Projects extends Component {
                     "PHP",
                 ],
                 projectDesc: {
-                    desc: "This is my take on the popular game, 'GeoGuessr', built in React.",
-                    notableFeature: "This project uses Nominatim GeoCoder, Country.io, and Google APIs, and is consumed using React and Axios. The app randomly selects a street-view available latitude and longitude coordinate, and asks the player to guess the target location by searching for clues in the street-view.",
-                    futureFixes: "Currently, the only way to skip the current target location is to refresh the page, and the application is not mobile friendly. There are several other user-experience considerations I'd like to fix, so that the game feels more intuitive.",
+                    desc: "A chat application powered by XML, jQuery and PHP, built for a school project.",
+                    notableFeature: "XML is used to store registered users, as well as the chat messages for a specific chatroom PHP sessions are used to restrict use.rs from entering a chatroom before logging in.",
+                    futureFixes: "There was an attempt to integrate Google Authentication using their API, but a bug caused a user to keep logging in, immediately after logging out. A user needs to be manually added to the XML file in order to register - it would be ideal to create a registration system in the app instead.",
                     imgSrcPath: [
-                        'images/projects/guess-the-location/1.png',
-                        'images/projects/guess-the-location/2.png',
-                        'images/projects/guess-the-location/3.png',
+                        'images/projects/xml-chat-app/1.png',
+                        'images/projects/xml-chat-app/2.png',
+                        'images/projects/xml-chat-app/3.png',
+                    ],
+                },
+                id: 4,
+                github: "https://github.com/KentoKana/xml-chat-application",
+                liveSite: "http://xml-chat-app.kentokanazawa.com/"
+            },
+            {
+                projectName: "Rock Paper Scissors ",
+                toolsUsed: [
+                    "Socket.io",
+                    "JavaScript",
+                ],
+                projectDesc: {
+                    desc: "A chat application powered by XML, jQuery and PHP, built for a school project.",
+                    notableFeature: "XML is used to store registered users, as well as the chat messages for a specific chatroom PHP sessions are used to restrict use.rs from entering a chatroom before logging in.",
+                    futureFixes: "There was an attempt to integrate Google Authentication using their API, but a bug caused a user to keep logging in, immediately after logging out. A user needs to be manually added to the XML file in order to register - it would be ideal to create a registration system in the app instead.",
+                    imgSrcPath: [
+                        'images/projects/xml-chat-app/1.png',
+                        'images/projects/xml-chat-app/2.png',
+                        'images/projects/xml-chat-app/3.png',
                     ],
                 },
                 id: 4,

@@ -9,7 +9,6 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 class CoreSkills extends Component {
 
   render() {
-    let i = 0;
     const skills =
       [
         {
@@ -70,11 +69,11 @@ class CoreSkills extends Component {
             <h2 className="text-center">Core Skills</h2>
             <Row className="projectsRow">
               {
-                skills.map(s =>
+                skills.map((s, index) =>
                   <SkillCard
                     skillName={s.skillName}
-                    key={s.id.toString()}
-                    displaySkills={s.skills.map(ss => <li className="list-unstyled text-center p-0" key={i++}>{ss}</li>)}
+                    key={index}
+                    displaySkills={s.skills.map((ss, index2) => <li className="list-unstyled text-center p-0" key={index2}>{ss}</li>)}
                   />
                 )
               }

@@ -8,7 +8,7 @@ function TitleSection() {
     <ScrollableAnchor id={'home'}>
       <main className="section center titleSection primary-text">
         <Container>
-          <div>
+          <div className="titleWrap">
             <a href="/#home">
               <img
                 src="/images/logo.png"

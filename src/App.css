@@ -217,6 +217,12 @@ a.project__link {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
+
+/* .titleWrap {
+    margin: 20%;
+    background-color: rgba(5, 9, 19, 0.288);
+} */
+
 .socialMediaLinks a {
     font-size: 1.5em;
     padding: 0 5px;
@@ -229,8 +235,7 @@ a.project__link {
 #logo {
     width: 100px;
     filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, 0.7));
-    background-color: rgba(5, 9, 19, 0.288);
-    border: 4px rgb(255, 255, 255) dashed;
+    /* border: 4px rgb(255, 255, 255) dashed; */
     padding: 20px;
     border-radius: 5px;
 }
@@ -252,12 +257,13 @@ a.project__link {
 }
 
 .projectCard {
-    background-color: #00000059;
-    border: 4px rgb(255, 255, 255) dashed;
+    background-color: #1b76bb65;
+    /* border: 4px rgb(255, 255, 255) dashed; */
     padding: 20px;
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
+    box-shadow: 2px 2px 2px black;
 }
 
 .projectCard:hover {
@@ -265,15 +271,33 @@ a.project__link {
     transition: 0.2s;
 }
 
+.projectCard:active {
+    background-color: #f05a28;
+}
+
 .projectsRow {
     margin: 3em;
     justify-content: flex-start;
 }
 
-.projectModal {
-    background-color: rgb(13, 1, 32);
-    color: rgb(255, 145, 0);
+.projectModal,
+.modalHeader,
+.modalFooter {
+    background-color: #f05a28;
+    color: rgb(255, 255, 255);
     /* border: 4px rgb(255, 255, 255) dashed; */
+}
+
+.modalLink {
+    padding: 5px;
+}
+
+.modalLink:hover {
+    color: #1b75bb;
+}
+
+.modalLink:active {
+    color: #0f4066;
 }
 
 .modalLink {
@@ -286,15 +310,31 @@ a.project__link {
 }
 
 .skillCard {
-    background-color: rgba(5, 9, 19, 0.61);
-    border: 4px rgb(255, 255, 255) dashed;
+    background-color: #f05a2883;
     padding: 20px;
     border-radius: 5px;
     margin: 5px;
+    height: 100%;
+    box-shadow: 2px 2px 2px black;
+}
+
+@media only screen and (max-width: 992px) {
+    .skillCard {
+        border-radius: 0px;
+    }
 }
 
 .contactSection {
     background-color: #061b2bce;
+    font-size: 20px;
+}
+
+.mailLink:hover {
+    color: #1b75bb;
+}
+
+.mailLink:active {
+    color: #f05a28;
 }
 
 #rocket {

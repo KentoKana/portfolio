@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 const SkillCard = (props) => {
 
   return (
-    <Col lg={4} className="">
+    <Col lg={3} className="">
         <div className="skillCard">
           <h3 className="text-center">{props.skillName}</h3>
           <ul className="text-left">

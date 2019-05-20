@@ -51,9 +51,6 @@ class ProjectCard extends Component {
             </ul>
             <span className="sr-only"></span>
           </Row>
-          {/* <Button onClick={() => this.setState({ lgShow: true })}>
-            See Details
-          </Button> */}
         </div>
         <ButtonToolbar className="d-flex justify-content-center">
 
@@ -69,7 +66,7 @@ class ProjectCard extends Component {
             aria-labelledby="contained-modal-title-vcenter"
             centered
           >
-            <Modal.Header closeButton>
+            <Modal.Header className="modalHeader" closeButton>
               <Modal.Title id="contained-modal-title-vcenter">
                 {this.props.projectName}
               </Modal.Title>
@@ -84,20 +81,7 @@ class ProjectCard extends Component {
                   slideShowImg={this.props.modalBodyContent} />
               </div>
               <div className="text-left p-4">
-                <div className="m-4">
-                  <h5>
-                    <a
-                      href={this.props.github}
-                      aria-label="Visit GitHub Repository"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="modalLink"
-                    >Visit GitHub Repo
-    
-                      {/* <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i> */}
-                    </a>
-                  </h5>
-                </div>
+                
                 <div className="m-4">
                   <h5>
                     <a
@@ -110,18 +94,49 @@ class ProjectCard extends Component {
                     </a>
                   </h5>
                 </div>
+                <div className="m-4">
+                  <h5>
+                    <a
+                      href={this.props.github}
+                      aria-label="Visit GitHub Repository"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="modalLink"
+                    >
+                      Visit GitHub Repo
+                    </a>
+                  </h5>
+                </div>
+
+                <hr />
+
+                <div className="m-4 project-modal__desc">
+                  <h4>Main Tools Used</h4>
+                  <p>
+                    {this.props.toolsUsed}
+                  </p>
+                </div>
+
+                <hr />
+
                 <div className="m-4 project-modal__desc">
                   <h4>Project Description</h4>
                   <p>
                     {this.props.modalBodyContent.desc}
                   </p>
                 </div>
+
+                <hr />
+
                 <div className="m-4 project-modal__desc">
                   <h4>Notable Features</h4>
                   <p>
                     {this.props.modalBodyContent.notableFeature}
                   </p>
                 </div>
+
+                <hr />
+
                 <div className="m-4 project-modal__desc">
                   <h4>Future Considerations</h4>
                   <p>
@@ -131,19 +146,22 @@ class ProjectCard extends Component {
               </div>
             </Modal.Body>
 
-            <Modal.Footer style={fontStyle} className="d-flex justify-content-center">
+            <Modal.Footer style={fontStyle} className="d-flex justify-content-center modalFooter">
               <div>
                 <a
                   href={this.props.github}
                   aria-label="Visit GitHub Repository"
                   target="_blank" rel="noopener noreferrer"
+                  className="modalLink"
                 >
                   <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i>
                 </a>
                 <a
                   href={this.props.liveSite}
                   aria-label="Visit Live Site" target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                  className="modalLink"
+                >
                   <i className="fas fa-globe-europe" aria-hidden="true" title="Visit Live Site"></i>
                 </a>
               </div>

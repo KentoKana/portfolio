@@ -65,7 +65,7 @@ class Projects extends Component {
                 projectDesc: {
                     desc: "This tower defense game was created during the hackathon 'Global Game Jam 2018' by myself and 2 other developers. I was responsible for the initial splash page, navigation items, and the MySQL logic for saving players and their scores to the scoreboard.",
                     notableFeature: "The game includes helper items that assist the players to beat the game. Once the game is over, the player has an option to upload their score to the leaderboard, where they can compete against other players.",
-                    futureFixes: "Due to time crunch of the hackathon (3 days), the code structure focuses on making it work, as opposed to organization and maintainability (for example, the entire game logic is saved under one JavaScript file). If given more time, it would be beneficial to split up the code based on components, so that maintaining the code, as well as adding future content would be easier.",
+                    futureFixes: "Due to time crunch of the hackathon (3 days), the code structure focuses on making it work, as opposed to organization and maintainability. If given more time, it would be beneficial to split up the code based on components, so that maintaining the code, as well as adding future content would be easier.",
                     imgSrcPath: [
                         'images/projects/home-defender/1.png',
                         'images/projects/home-defender/2.png',
@@ -125,18 +125,18 @@ class Projects extends Component {
                     "JavaScript",
                 ],
                 projectDesc: {
-                    desc: "A chat application powered by XML, jQuery and PHP, built for a school project.",
-                    notableFeature: "XML is used to store registered users, as well as the chat messages for a specific chatroom PHP sessions are used to restrict use.rs from entering a chatroom before logging in.",
-                    futureFixes: "There was an attempt to integrate Google Authentication using their API, but a bug caused a user to keep logging in, immediately after logging out. A user needs to be manually added to the XML file in order to register - it would be ideal to create a registration system in the app instead.",
+                    desc: "A real-time 2 player Rock Paper Scissors game!",
+                    notableFeature: "The app is created using Socket.io to allow for real-time exhange of information amongst those who are connected to the same server and url.  ",
+                    futureFixes: "Currently, there is a bug that cause the information to appear in sync on both players' screen. The UI could be improved too in order to more clearly report the outcome of the match.",
                     imgSrcPath: [
-                        'images/projects/xml-chat-app/1.png',
-                        'images/projects/xml-chat-app/2.png',
-                        'images/projects/xml-chat-app/3.png',
+                        'images/projects/rock-paper-scissors/1.png',
+                        'images/projects/rock-paper-scissors/2.png',
+                        'images/projects/rock-paper-scissors/3.png',
                     ],
                 },
                 id: 4,
-                github: "https://github.com/KentoKana/xml-chat-application",
-                liveSite: "http://xml-chat-app.kentokanazawa.com/"
+                github: "https://github.com/KentoKana/rock-paper-scissors",
+                liveSite: "http://rock-paper-scissors.kentokanazawa.com/"
             },
             
 

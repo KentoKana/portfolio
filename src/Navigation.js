@@ -11,7 +11,7 @@ class Navigation extends Component {
         this.unselectedLink = 'nav__link';
         this.currentHeaderUrl = window.location.hash;
         this.state = {
-            earthSize: '200px',
+            earthSize: '400px',
             projectiles: 'satellite.svg',
             rocketWobble: false,
             navVisible: false,
@@ -77,17 +77,17 @@ class Navigation extends Component {
         if (window.location.hash === "#home") {
             this.setState({
                 projectiles: 'satellite.svg',
-                earthSize: '200px',
+                earthSize: '400px',
             })
         } else if (window.location.hash === "#projects") {
             this.setState({
                 projectiles: "asteroid.svg",
-                earthSize: '150px',
+                earthSize: '300px',
             })
         } else if (window.location.hash === "#skills") {
             this.setState({
                 projectiles: "ufo.svg",
-                earthSize: '100px',
+                earthSize: '150px',
             })
         } else if (window.location.hash === "#contact") {
             this.setState({

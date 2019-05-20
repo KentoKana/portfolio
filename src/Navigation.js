@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Asteroid from "./Asteroid";
+import { removeHash } from 'react-scrollable-anchor';
 
 
 class Navigation extends Component {
@@ -11,7 +12,7 @@ class Navigation extends Component {
         this.unselectedLink = 'nav__link';
         this.currentHeaderUrl = window.location.hash;
         this.state = {
-            earthSize: '400px',
+            earthSize: '200px',
             projectiles: 'satellite.svg',
             rocketWobble: false,
             navVisible: false,
@@ -77,17 +78,17 @@ class Navigation extends Component {
         if (window.location.hash === "#home") {
             this.setState({
                 projectiles: 'satellite.svg',
-                earthSize: '400px',
+                earthSize: '200px',
             })
         } else if (window.location.hash === "#projects") {
             this.setState({
                 projectiles: "asteroid.svg",
-                earthSize: '300px',
+                earthSize: '150px',
             })
         } else if (window.location.hash === "#skills") {
             this.setState({
                 projectiles: "ufo.svg",
-                earthSize: '150px',
+                earthSize: '100px',
             })
         } else if (window.location.hash === "#contact") {
             this.setState({
@@ -95,7 +96,7 @@ class Navigation extends Component {
                 earthSize: '50px',
             })
         }
-
+        setTimeout(removeHash, 400);
     }
 
     handleRocketWobble = () => {
@@ -104,6 +105,7 @@ class Navigation extends Component {
 
     componentDidMount = () => {
         window.onhashchange = this.selectionChanged;
+        // window.onscroll = removeHash;
     }
 
     render() {

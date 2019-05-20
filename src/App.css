@@ -234,7 +234,8 @@ a.project__link {
 
 #logo {
     width: 100px;
-    filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, 0.7));
+    background-color: rgba(0, 0, 0, 0.493);
+    /* filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, 0.7)); */
     /* border: 4px rgb(255, 255, 255) dashed; */
     padding: 20px;
     border-radius: 5px;
@@ -283,9 +284,30 @@ a.project__link {
 .projectModal,
 .modalHeader,
 .modalFooter {
-    background-color: #f05a28;
+    background-color: #eb7d3e;
     color: rgb(255, 255, 255);
     /* border: 4px rgb(255, 255, 255) dashed; */
+}
+
+.carousel.slide {
+    box-shadow: 2px 2px 10px rgb(139, 80, 1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #42464956;
+}
+
+.projectCard .modalLink {
+    font-size: 25px;
+}
+
+.projectCard .modalLink:hover {
+    color: #f05a28;
+}
+
+.projectCard .modalLink:active {
+    color: #0f4066;
 }
 
 .modalLink {
@@ -345,7 +367,7 @@ a.project__link {
     bottom: 0;
     margin: auto;
     z-index: -1;
-    width: 50%;
+    width: 40%;
 }
 
 #earth {

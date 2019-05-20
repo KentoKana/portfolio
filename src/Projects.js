@@ -4,7 +4,11 @@ import ProjectCard from './ProjectCard';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import ScrollableAnchor from 'react-scrollable-anchor';
-
+import { configureAnchors } from 'react-scrollable-anchor'
+ 
+// Offset all anchors by -60 to account for a fixed header
+// and scroll more quickly than the default 400ms
+configureAnchors({offset: -60, scrollDuration: 200})
 
 class Projects extends Component {
     render() {

@@ -2,7 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-
 function TitleSection() {
   return (
     <ScrollableAnchor id={'home'}>
@@ -32,6 +31,8 @@ function TitleSection() {
               >
                 <i className="fab fa-linkedin" aria-hidden="false" title="Visit My LinkedIn"></i>
               </a>
+              <a className="mailLink" href="mailto:kanazawakento91@gmail.com"><i className="far fa-envelope"  aria-hidden="false" title="kanazawakento91@gmail.com"></i></a>
+
             </div>
           </div>
         </Container>

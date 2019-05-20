@@ -43,13 +43,31 @@ class ProjectCard extends Component {
               />
             </div>
           </Row>
+          <div className="p-2">
+            <a
+              href={this.props.github}
+              aria-label="Visit GitHub Repository"
+              target="_blank" rel="noopener noreferrer"
+              className="modalLink"
+            >
+              <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i>
+            </a>
+            <a
+              href={this.props.liveSite}
+              aria-label="Visit Live Site" target="_blank"
+              rel="noopener noreferrer"
+              className="modalLink"
+            >
+              <i className="fas fa-globe-europe" aria-hidden="true" title="Visit Live Site"></i>
+            </a>
+          </div>
           <Row
             className="justify-content-center"
           >
-            <ul className="pt-3 text-left d-flex row" title="Main Tools Used">
+            <ul className="text-left d-flex row" title="Main Tools Used">
               {this.props.toolsUsed}
             </ul>
-            <span className="sr-only"></span>
+            <span className="sr-only">Main Tools</span>
           </Row>
         </div>
         <ButtonToolbar className="d-flex justify-content-center">
@@ -81,7 +99,7 @@ class ProjectCard extends Component {
                   slideShowImg={this.props.modalBodyContent} />
               </div>
               <div className="text-left p-4">
-                
+
                 <div className="m-4">
                   <h5>
                     <a

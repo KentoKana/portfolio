@@ -6,7 +6,12 @@ import Projects from "./Projects";
 import TitleSection from "./TitleSection";
 import Navigation from "./Navigation"
 import Contact from "./Contact";
-// import Asteroid from "./Asteroid";
+import { configureAnchors } from 'react-scrollable-anchor'
+ 
+// Offset all anchors by -60 to account for a fixed header
+// and scroll more quickly than the default 400ms
+configureAnchors({keepLastAnchorHash: false})
+
 
 class App extends Component {
   constructor(props) {

@@ -96,6 +96,7 @@ class Navigation extends Component {
                 earthSize: '50px',
             })
         }
+        window.onscroll = removeHash;
         setTimeout(removeHash, 400);
     }
 

@@ -35,7 +35,7 @@ function TitleSection() {
 
             </div>
           </div>
-          <p class="mt-5 pt-5">Curious about how I built this portfolio site? Visit my GitHub Repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
+          <p className="mt-5 pt-5">Curious about how I built this portfolio site? Visit my GitHub repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
           >here!</a></p>
 
         </Container>

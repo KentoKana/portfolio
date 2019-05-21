@@ -128,7 +128,8 @@ class Navigation extends Component {
                 }
 
             /> <nav className={this.state.navBarClassName} >
-                <i className="fas fa-bars"
+                <i className={
+                    !this.state.navVisible ? "fas fa-bars" : "fas fa-times"}
                     id="hamburger-menu"
                     onClick={this.handleMobileNavClick} > </i>
                 <ul > {

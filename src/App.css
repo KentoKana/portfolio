@@ -213,6 +213,7 @@ a.project__link {
 /* ~~~~~~~~~~~~ Section Specific ~~~~~~~~~~~~~*/
 
 .titleSection {
+    background-color: rgba(22, 65, 114, 0.178);
     background-color: #b4edff34;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
@@ -242,6 +243,7 @@ a.project__link {
 }
 
 .projectSection {
+    background-color: rgba(5, 15, 51, 0.5);
     background-color: #0d3c5f8a;
     color: rgb(253, 254, 255);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.623);
@@ -258,6 +260,8 @@ a.project__link {
 }
 
 .projectCard {
+    /* The Fallback */
+    background-color: #0091ff;
     background-color: #1b76bb65;
     /* border: 4px rgb(255, 255, 255) dashed; */
     padding: 20px;
@@ -332,6 +336,7 @@ a.project__link {
 }
 
 .skillCard {
+    background-color: #f05a28;
     background-color: #f05a28a2;
     padding: 20px;
     border-radius: 5px;
@@ -347,6 +352,7 @@ a.project__link {
 }
 
 .contactSection {
+    background-color: rgba(9, 14, 59, 0.5);
     background-color: #061b2bce;
     font-size: 20px;
 }
@@ -388,6 +394,7 @@ a.project__link {
 
 #rocket.rocket-wobble {
     animation: shake 1s cubic-bezier(.36, .07, .19, .97) both 1;
+    -ms-animation: shake 1s cubic-bezier(.36, .07, .19, .97) both 1;
 }
 
 @keyframes shake {
@@ -429,9 +436,8 @@ a.project__link {
     top: 50px;
     height: auto;
     position: fixed;
-    animation-name: particleAnimation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: particleAnimation linear infinite;
+    -ms-animation: particleAnimation linear infinite;
     z-index: -2;
 }
 

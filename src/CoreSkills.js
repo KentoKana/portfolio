@@ -19,7 +19,8 @@ class CoreSkills extends Component {
             "JavaScript",
             "SASS",
             "jQuery",
-            "Bootstrap"
+            "Bootstrap",
+            "React",
           ],
           id: 1
         },
@@ -28,7 +29,8 @@ class CoreSkills extends Component {
           skills: [
             "PHP",
             "ASP.NET",
-            "NodeJS"
+            "NodeJS",
+            "Socket.io",
           ],
           id: 2
         },
@@ -43,20 +45,15 @@ class CoreSkills extends Component {
           id: 3
         },
         {
-          skillName: "I've worked with...",
+          skillName: "Development Tools",
           skills: [
-            "React",
-            "BEM",
-            "Socket.io",
-            "Jasmine",
-            "MVC",
             "GIT",
             "NPM",
-            "Express",
-            "jQuery",
-            "AJAX",
-            "XML",
-            "REST APIs"
+            "Jasmine",
+            "Postman",
+            "cPanel",
+            "Heroku",
+            "Cloud Hosting",
           ],
           id: 4
         }

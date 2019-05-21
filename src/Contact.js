@@ -13,7 +13,7 @@ class Contact extends Component {
             <ScrollableAnchor id={'contact'}>
                 <div className="section contactSection primary-text center">
                     <Container>
-                        <Heading heading="Contact Me" />
+                        <Heading heading="Let's talk!" />
                         <Row>
                             <a className="mailLink" href="mailto:kanazawakento91@gmail.com"><i className="far fa-envelope"  aria-hidden="false" title="kanazawakento91@gmail.com"></i> kanazawakento91@gmail.com</a>
                         </Row>

@@ -332,7 +332,7 @@ a.project__link {
 }
 
 .skillCard {
-    background-color: #f05a2883;
+    background-color: #f05a28a2;
     padding: 20px;
     border-radius: 5px;
     margin: 5px;
@@ -351,12 +351,20 @@ a.project__link {
     font-size: 20px;
 }
 
+.mailLink {
+    background-color: rgba(25, 53, 114, 0.568);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .mailLink:hover {
-    color: #1b75bb;
+    background-color: rgba(8, 18, 36, 0.397);
+    color: #f05a28;
 }
 
 .mailLink:active {
-    color: #f05a28;
+    background-color: rgba(22, 41, 78, 0.397);
+    color: #1b75bb;
 }
 
 #rocket {

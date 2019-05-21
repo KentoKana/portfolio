@@ -31,10 +31,13 @@ function TitleSection() {
               >
                 <i className="fab fa-linkedin" aria-hidden="false" title="Visit My LinkedIn"></i>
               </a>
-              <a className="mailLink" href="mailto:kanazawakento91@gmail.com"><i className="far fa-envelope"  aria-hidden="false" title="kanazawakento91@gmail.com"></i></a>
+              <a href="mailto:kanazawakento91@gmail.com"><i className="far fa-envelope" aria-hidden="false" title="kanazawakento91@gmail.com"></i></a>
 
             </div>
           </div>
+          <p class="mt-5 pt-5">Curious about how I built this portfolio site? Visit my GitHub Repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
+          >here!</a></p>
+
         </Container>
       </main>
     </ScrollableAnchor>

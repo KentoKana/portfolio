@@ -35,9 +35,11 @@ function TitleSection() {
 
             </div>
           </div>
-          <p className="mt-5 pt-5">Curious about how I built this portfolio site? Visit my GitHub repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
+          <p className="pt-5">Curious about how I built this portfolio site? Visit my GitHub repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
           >here!</a></p>
-
+          <div className="downArrow">
+            <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+          </div>
         </Container>
       </main>
     </ScrollableAnchor>

@@ -106,7 +106,6 @@ class Navigation extends Component {
 
     componentDidMount = () => {
         window.onhashchange = this.selectionChanged;
-        // window.onscroll = removeHash;
     }
 
     render() {

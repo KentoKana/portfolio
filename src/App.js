@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.asteroidOn);
+    // console.log(this.state.asteroidOn);
     return (
       <div className="text-center">
         {/* <div

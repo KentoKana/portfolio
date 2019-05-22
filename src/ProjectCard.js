@@ -43,24 +43,26 @@ class ProjectCard extends Component {
               />
             </div>
           </Row>
-          <div className="p-2">
-            <a
-              href={this.props.github}
-              aria-label="Visit GitHub Repository"
-              target="_blank" rel="noopener noreferrer"
-              className="modalLink"
-            >
-              <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i>
-            </a>
-            <a
-              href={this.props.liveSite}
-              aria-label="Visit Live Site" target="_blank"
-              rel="noopener noreferrer"
-              className="modalLink"
-            >
-              <i className="fas fa-globe-europe" aria-hidden="true" title="Visit Live Site"></i>
-            </a>
-          </div>
+          <Row className="d-flex justify-content-center">
+            <div className="p-2">
+              <a
+                href={this.props.github}
+                aria-label="Visit GitHub Repository"
+                target="_blank" rel="noopener noreferrer"
+                className="modalLink"
+              >
+                <i className="fab fa-github" aria-hidden="false" title="Visit GitHub Repository"></i>
+              </a>
+              <a
+                href={this.props.liveSite}
+                aria-label="Visit Live Site" target="_blank"
+                rel="noopener noreferrer"
+                className="modalLink"
+              >
+                <i className="fas fa-globe-europe" aria-hidden="true" title="Visit Live Site"></i>
+              </a>
+            </div>
+          </Row>
           <Row
             className="justify-content-center"
           >
@@ -68,6 +70,11 @@ class ProjectCard extends Component {
               {this.props.toolsUsed}
             </ul>
             <span className="sr-only">Main Tools</span>
+          </Row>
+          <Row className="d-flex justify-content-center">
+            <div className="seeDetails">
+              See Details
+            </div>
           </Row>
         </div>
         <ButtonToolbar className="d-flex justify-content-center">

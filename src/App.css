@@ -13,6 +13,12 @@ h1 {
     font-size: 5em;
 }
 
+@media only screen and (max-width: 996px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
 h2 {
     margin-top: 1em;
 }

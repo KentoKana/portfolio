@@ -16,6 +16,8 @@ function TitleSection() {
             </a>
             <h1>I'm Kento.</h1>
             <p>A full-stack web developer currently based in Toronto.</p>
+            <p className="">Curious about how I built this portfolio site? Visit my GitHub repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
+            >here!</a></p>
             <div className="socialMediaLinks">
               <a
                 href="https://github.com/kentokana"
@@ -35,8 +37,7 @@ function TitleSection() {
 
             </div>
           </div>
-          <p className="pt-5">Curious about how I built this portfolio site? Visit my GitHub repository<a className="modalLink" href="https://github.com/KentoKana/portfolio" target="_blank" rel="noopener noreferrer"
-          >here!</a></p>
+
           <div className="downArrow">
             <a href="#projects"><i class="fas fa-chevron-down"></i></a>
           </div>

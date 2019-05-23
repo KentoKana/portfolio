@@ -138,6 +138,27 @@ class Projects extends Component {
                 github: "https://github.com/KentoKana/rock-paper-scissors",
                 liveSite: "http://rock-paper-scissors.kentokanazawa.com/"
             },
+            {
+                projectName: "Weather App",
+                toolsUsed: [
+                    "React",
+                    "Axios",
+                    "Dark Skyp Api",
+                ],
+                projectDesc: {
+                    desc: "This is one of the first apps my classmate and I worked on when learning how to use React to consume APIs. The app displays weather of current location by default, with the option to search for weather in another location using the form provided.",
+                    notableFeature: "Dark Sky API is used to retrieve weather information for a specific location by injecting a longitude and latitude. The longitude and latitude are retrieved HTML Geolocation API for the current location, or Nominatim GeoCoder API that retrieves coordinates for a specific city.",
+                    futureFixes: "The HTML GeoLocation API is currently disabled due to the fact that the host does not have SSL. The site is also currently not responsive, as the focus of this app was to learn how to use React. Future fixes will include a responsive design.",
+                    imgSrcPath: [
+                        'images/projects/weather-app/1.png',
+                        'images/projects/weather-app/2.png',
+                        'images/projects/weather-app/3.png',
+                    ],
+                },
+                id: 4,
+                github: "https://github.com/KentoKana/WeatherApp",
+                liveSite: "http://weather-app.kentokanazawa.com/"
+            },
             
 
         ];

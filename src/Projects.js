@@ -143,7 +143,7 @@ class Projects extends Component {
                 toolsUsed: [
                     "React",
                     "Axios",
-                    "Dark Skyp Api",
+                    "Dark Sky API",
                 ],
                 projectDesc: {
                     desc: "This is one of the first apps my classmate and I worked on when learning how to use React to consume APIs. The app displays weather of current location by default, with the option to search for weather in another location using the form provided.",

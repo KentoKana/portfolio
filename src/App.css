@@ -226,6 +226,10 @@ a.project__link {
     position: relative;
 }
 
+.downloadResume {
+    font-size: 12px;
+}
+
 .downArrow a {
     font-size: 2em;
     position: absolute;

@@ -14,7 +14,7 @@ class SlideShow extends Component {
               <img
                 src={i}
                 className="d-block w-100"
-                alt="project overview pictures"
+                alt={this.props.altTag}
                 key={key++}
                 style={{
                   width: "200px !important"

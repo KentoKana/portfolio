@@ -34,7 +34,7 @@ class ProjectCard extends Component {
             <div>
               <img
                 src={this.props.modalBodyContent.imgSrcPath[0]}
-                alt="project snapshot"
+                alt={this.props.projectName}
                 onClick={() => this.setState({ lgShow: true })}
                 style={{
                   cursor: 'pointer',
@@ -103,7 +103,9 @@ class ProjectCard extends Component {
               <div>
                 <SlideShow
                   key={key++}
-                  slideShowImg={this.props.modalBodyContent} />
+                  slideShowImg={this.props.modalBodyContent} 
+                  altTag={this.props.projectName}
+                  />
               </div>
               <div className="text-left p-4">
 

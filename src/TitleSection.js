@@ -34,15 +34,6 @@ function TitleSection() {
                 <i className="fab fa-linkedin" aria-hidden="false" title="Visit My LinkedIn"></i>
               </a>
               <a href="mailto:kanazawakento91@gmail.com"><i className="far fa-envelope" aria-hidden="false" title="kanazawakento91@gmail.com"></i></a>
-              <div className="downloadResume">
-                <a
-                  href="/kentokanazawa-resume.pdf"
-                  aria-label="Download My Resume"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <i className="fas fa-file-download" aria-hidden="false" title="Download My Resume"></i> View My Resume
-                </a>
-              </div>
 
             </div>
           </div>
